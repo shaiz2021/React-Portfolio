@@ -1,4 +1,4 @@
-import PortfolioImage from '../assets/For CV.png'
+import PortfolioImage from '../assets/ForCV.png'
 
 const About = () => {
     return (

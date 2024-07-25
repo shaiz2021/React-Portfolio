@@ -1,8 +1,8 @@
 const skills = [
-    {id: 1, name: "Web Developer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", image: "/src/assets/Strategy & Direction.png"},
-    {id: 2, name: "Front-End Developer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", image: "/src/assets/Branding & Logo.png"},
-    {id: 3, name: "React JS Developer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", image: "/src/assets/UI & UX Design.png"},    
-    {id: 4, name: "Tailwind CSS Developer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", image: "/src/assets/Webflow Development.png"},
+    {id: 1, name: "Web Developer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", image: "/src/assets/Strategy&Direction.png"},
+    {id: 2, name: "Front-End Developer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", image: "/src/assets/Branding&Logo.png"},
+    {id: 3, name: "React JS Developer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", image: "/src/assets/UI&UXDesign.png"},    
+    {id: 4, name: "Tailwind CSS Developer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", image: "/src/assets/WebflowDevelopment.png"},
 ]
 
 const Skills = () => {
