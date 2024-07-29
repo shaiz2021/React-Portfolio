@@ -2,7 +2,7 @@
 
 const Home = () => {
     return (
-        <div className='mt-8 bg-bgShade p-10' id="home">
+        <div className='mt-32 bg-bgShade p-20' id="home">
             <div className='lg:px-12 flex flex-col md:flex-row items-center justify-between gap-5 animate-text-reveal '>                             
                 <div className='md:w-1/2 w-full mt-5'>
                     <h3 className='text-2xl text-headingColor font-semibold mb-5'>
