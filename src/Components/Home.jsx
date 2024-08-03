@@ -3,7 +3,7 @@
 const Home = () => {
     return (
         <div className='mt-32 bg-bgShade p-20' id="home">
-            <div className='lg:px-12 flex flex-col md:flex-row items-center justify-between gap-5 animate-text-reveal '>                             
+            <div className='lg:px-12 flex flex-col md:flex-row items-center justify-between gap-5 '>                             
                 <div className='md:w-1/2 w-full mt-5'>
                     <h3 className='text-2xl text-headingColor font-semibold mb-5'>
                         Hey, Iam <span className=' text-3xl text-primary capitalize hover:text-5xl duration-300 '>Shahzaib</span>
