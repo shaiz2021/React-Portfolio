@@ -1,11 +1,24 @@
-import { useEffect, useState } from "react"
+
 import { IoLogoGithub } from "react-icons/io5";
 
 const Portfolio = () => {
-    const [projects, setProjects] = useState([]);
-    useEffect(() => {
-        fetch('projects.json').then(res => res.json()).then(data => setProjects(data))
-    }, []);
+    const projects = [
+        {
+            id: 1, name: "Nike Landing Page", description: "Single Landing Page using HTML & CSS", image: "/src/assets/Screenshot(51).png", link: "https://pagefornike.netlify.app/"
+        },
+        {
+            id: 2, name: "Spotify Clone", description: "One Page Clone using HTML & CSS", image: "/src/assets/Screenshot(52).png", link: "https://thecloneofspotify.netlify.app/"
+        },
+        {
+            id: 3, name: "Ripper Enterprises", description: "E-Commerce Website using HTML & CSS", image: "/src/assets/Screenshot(54).png", link: "https://ripperenterprises.netlify.app/"
+        },
+        {
+            id: 4, name: "Nexcent Website", description: "Nexcent Website using React Js and Tailwind CSS", image: "/src/assets/Screenshot(55).png", link: "https://github.com/shaiz2021/NEXCENT_REACT-TAILWIND_CSS_PROJECT"
+        },
+        {
+            id: 5, name: "Portfolio Project", description: "My previous Portfolio using HTML & CSS", image: "/src/assets/image.png", link: "https://shahzaibkhanportfolio.netlify.app/"
+        }
+    ]
     return (
         <div className="lg:mx-12 mx-4 my-32" id="projects">
             <div className="flex flex-col md:flex-row justify-between mb-20 gap-8 md:items-center">
