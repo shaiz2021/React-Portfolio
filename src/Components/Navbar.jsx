@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import logo from '../assets/Logo.png'
 import { HiMenu } from "react-icons/hi";
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
@@ -18,13 +18,23 @@ const Navbar = () => {
 
         window.addEventListener("scroll", handleScroll);
     }, [])
+
+    const logos = [
+        {
+            id: "1", image:"/src/assets/Logo.png"
+        }
+    ]
+
     return (
         <div>
             <header className='w-full fixed top-0 left-0 right-0 z-10' >
-                <nav className= {`py-4 md:px-12 px-4 bg-white ${isSticky? "sticky top-0 left-0 right-0 bg-white": "" }`}>
+                <nav className={`py-4 md:px-12 px-4 bg-white ${isSticky ? "sticky top-0 left-0 right-0 bg-white" : ""}`}>
                     <div className='flex items-center justify-between'>
                         <div className='cursor-pointer'>
-                            <img src={logo} alt="" className='h-10 rounded-2xl' />
+                            {
+                                logos.map(logo =>
+                                <img key={logo.id} src={logo.image} alt="aboutimage" className='h-10 rounded-2xl' />
+                            )}
                         </div>
                         <div className='lg:flex items-center gap-5 hidden text-body'>
                             <Link to='home' spy={true} activeClass='active' smooth={true} offset={-100} className='block py-2 px-4 cursor-pointer text-primary hover:text-gray-400 text-xl' >Home</Link>
